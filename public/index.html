@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #333333;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    audio {
+      width: 100%;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Music Player</h1>
+    <audio controls autoplay>
+      <source src="/stream" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+</html>
